@@ -168,6 +168,8 @@ article p, .steps p, .contact p { color: var(--muted); margin-bottom: 0; }
 .contact { text-align: center; max-width: 960px; margin: 0 auto; padding: clamp(34px, 6vw, 64px); }
 .contact p { max-width: 720px; margin-left: auto; margin-right: auto; }
 .contact a { color: var(--blue); font-weight: 800; }
+.contact .button { color: var(--white); }
+.contact .button.secondary { color: var(--navy); }
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

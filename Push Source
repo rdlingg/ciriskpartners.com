@@ -1,3 +1,0 @@
-git add .
-git commit -m "Add website source"
-git push -u origin main

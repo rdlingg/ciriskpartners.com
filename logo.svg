@@ -1,10 +1,7 @@
 <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Central Indiana Risk Partners logo</title>
-  <desc id="desc">A shield mark with CIRP initials.</desc>
-  <rect width="160" height="160" rx="36" fill="#10233F"/>
-  <path d="M80 24L123 40V73C123 101 105 124 80 136C55 124 37 101 37 73V40L80 24Z" fill="#F7F3EB"/>
-  <path d="M80 34L113 46V73C113 95 100 113 80 124C60 113 47 95 47 73V46L80 34Z" fill="#1F5F8B"/>
-  <path d="M80 45V114" stroke="#D49A3A" stroke-width="7" stroke-linecap="round"/>
-  <path d="M67 61H93M62 79H98M68 97H92" stroke="#F7F3EB" stroke-width="6" stroke-linecap="round"/>
-  <path d="M52 130L108 130" stroke="#D49A3A" stroke-width="6" stroke-linecap="round"/>
+  <title id="title">Central Indiana Risk Partners, LLC. logo</title>
+  <desc id="desc">A clean CIRP monogram mark.</desc>
+  <rect width="160" height="160" rx="34" fill="#10233F"/>
+  <circle cx="80" cy="80" r="54" fill="none" stroke="#D49A3A" stroke-width="8"/>
+  <text x="80" y="91" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" fill="#F7F3EB" letter-spacing="1">CIRP</text>
 </svg>

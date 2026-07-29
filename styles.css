@@ -2,6 +2,8 @@
   --navy: #10233f;
   --blue: #1f5f8b;
   --gold: #d49a3a;
+  --red: #b33a32;
+  --deep-red: #7f2f2a;
   --cream: #f7f3eb;
   --ink: #1b2430;
   --muted: #5f6b7a;
@@ -15,8 +17,8 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 10% 8%, rgba(212,154,58,.24), transparent 26%),
-    radial-gradient(circle at 90% 18%, rgba(31,95,139,.18), transparent 30%),
+    radial-gradient(circle at 10% 8%, rgba(179,58,50,.28), transparent 26%),
+    radial-gradient(circle at 90% 18%, rgba(179,58,50,.18), transparent 30%),
     linear-gradient(180deg, #f7f3eb 0%, #eef4ed 46%, #ffffff 100%);
 }
 
@@ -51,7 +53,7 @@ nav a:hover { color: var(--blue); }
 .nav-button {
   padding: 10px 16px;
   border-radius: 999px;
-  background: var(--blue);
+  background: linear-gradient(135deg, var(--red), var(--blue));
   color: var(--white);
   box-shadow: 0 12px 28px rgba(31, 95, 139, 0.2);
 }
@@ -90,7 +92,7 @@ nav a:hover { color: var(--blue); }
   width: min(620px, 54vw);
   height: 100%;
   background:
-    radial-gradient(circle at 72% 18%, rgba(212,154,58,.36) 0 54px, transparent 55px),
+    radial-gradient(circle at 72% 18%, rgba(179,58,50,.34) 0 54px, transparent 55px),
     radial-gradient(circle at 84% 62%, rgba(31,95,139,.18), transparent 32%),
     radial-gradient(circle at 22% 78%, rgba(16,35,63,.14), transparent 28%);
 }
@@ -119,7 +121,7 @@ p { line-height: 1.7; }
   justify-content: center;
   padding: 14px 20px;
   border-radius: 999px;
-  background: var(--blue);
+  background: linear-gradient(135deg, var(--red), var(--blue));
   color: var(--white);
   font-weight: 800;
   text-decoration: none;
@@ -152,8 +154,8 @@ p { line-height: 1.7; }
 .indiana-scene span { position: absolute; display: block; }
 .sun { width: 58px; height: 58px; border-radius: 50%; right: 30px; top: 24px; background: #d49a3a; box-shadow: 0 0 0 14px rgba(212,154,58,.18); }
 .farm-field { inset: auto 0 0 0; height: 76px; background: repeating-linear-gradient(14deg, rgba(247,243,235,.3) 0 12px, rgba(16,35,63,.08) 12px 24px); }
-.barn { left: 28px; bottom: 68px; width: 72px; height: 48px; background: #9f3f36; border-radius: 4px 4px 0 0; }
-.barn::before { content: ""; position: absolute; left: -8px; top: -28px; border-left: 44px solid transparent; border-right: 44px solid transparent; border-bottom: 32px solid #7f2f2a; }
+.barn { left: 28px; bottom: 68px; width: 72px; height: 48px; background: var(--red); border-radius: 4px 4px 0 0; }
+.barn::before { content: ""; position: absolute; left: -8px; top: -28px; border-left: 44px solid transparent; border-right: 44px solid transparent; border-bottom: 32px solid var(--deep-red); }
 .storefront { left: 120px; bottom: 70px; width: 70px; height: 58px; background: #f7f3eb; border: 4px solid #1f5f8b; border-radius: 6px; box-shadow: inset 0 18px 0 rgba(31,95,139,.16); }
 .storefront::before { content: ""; position: absolute; left: -6px; right: -6px; top: -18px; height: 18px; background: repeating-linear-gradient(90deg, #d49a3a 0 14px, #f7f3eb 14px 28px); border-radius: 8px 8px 0 0; }
 .home-shape { right: 40px; bottom: 70px; width: 78px; height: 54px; background: #ffffff; border: 4px solid #10233f; border-radius: 6px; }
@@ -162,7 +164,7 @@ p { line-height: 1.7; }
 .auto-shape { left: 52%; bottom: 34px; width: 64px; height: 24px; transform: translateX(-50%); background: #1f5f8b; border-radius: 16px 18px 8px 8px; box-shadow: 0 8px 0 rgba(16,35,63,.2); }
 .auto-shape::before { content: ""; position: absolute; left: 16px; top: -15px; width: 30px; height: 18px; background: #d8e9f4; border-radius: 14px 14px 0 0; }
 .coverage-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: -6px 0 22px; }
-.coverage-tags span { padding: 8px 12px; border-radius: 999px; background: rgba(31,95,139,.1); color: var(--navy); font-size: .88rem; font-weight: 800; }
+.coverage-tags span { padding: 8px 12px; border-radius: 999px; background: rgba(179,58,50,.1); color: var(--navy); font-size: .88rem; font-weight: 800; }
 ul { margin: 0; padding-left: 20px; color: var(--muted); line-height: 2; }
 
 .section { padding: clamp(54px, 8vw, 96px) clamp(20px, 5vw, 72px); }
@@ -197,7 +199,7 @@ article p, .steps p, .contact p { color: var(--muted); margin-bottom: 0; }
   position: absolute;
   inset: 0 auto 0 0;
   width: 5px;
-  background: var(--gold);
+  background: var(--red);
 }
 .carrier-card h3 {
   font-size: 1.05rem;

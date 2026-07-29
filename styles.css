@@ -141,28 +141,127 @@ p { line-height: 1.7; }
   backdrop-filter: blur(10px);
 }
 .hero-card h2 { font-size: 1.7rem; margin-bottom: 20px; }
-.indiana-scene {
+.indiana-photo {
   position: relative;
-  height: 210px;
+  height: 230px;
   margin-bottom: 26px;
   overflow: hidden;
   border-radius: 24px;
-  background:
-    linear-gradient(180deg, #d8e9f4 0%, #f7f3eb 52%, #b9cf8a 53%, #7fa25f 100%);
-  box-shadow: inset 0 0 0 1px rgba(16,35,63,.1);
+  background: linear-gradient(180deg, #cadfeb 0%, #eaf1f7 44%, #b8c982 45%, #8aa35f 100%);
+  box-shadow: inset 0 0 0 1px rgba(16,35,63,.1), 0 22px 48px rgba(16,35,63,.12);
 }
-.indiana-scene span { position: absolute; display: block; }
-.sun { width: 58px; height: 58px; border-radius: 50%; right: 30px; top: 24px; background: #d49a3a; box-shadow: 0 0 0 14px rgba(212,154,58,.18); }
-.farm-field { inset: auto 0 0 0; height: 76px; background: repeating-linear-gradient(14deg, rgba(247,243,235,.3) 0 12px, rgba(16,35,63,.08) 12px 24px); }
-.barn { left: 28px; bottom: 68px; width: 72px; height: 48px; background: var(--red); border-radius: 4px 4px 0 0; }
-.barn::before { content: ""; position: absolute; left: -8px; top: -28px; border-left: 44px solid transparent; border-right: 44px solid transparent; border-bottom: 32px solid var(--deep-red); }
-.storefront { left: 120px; bottom: 70px; width: 70px; height: 58px; background: #f7f3eb; border: 4px solid #1f5f8b; border-radius: 6px; box-shadow: inset 0 18px 0 rgba(31,95,139,.16); }
-.storefront::before { content: ""; position: absolute; left: -6px; right: -6px; top: -18px; height: 18px; background: repeating-linear-gradient(90deg, #d49a3a 0 14px, #f7f3eb 14px 28px); border-radius: 8px 8px 0 0; }
-.home-shape { right: 40px; bottom: 70px; width: 78px; height: 54px; background: #ffffff; border: 4px solid #10233f; border-radius: 6px; }
-.home-shape::before { content: ""; position: absolute; left: -8px; top: -32px; border-left: 47px solid transparent; border-right: 47px solid transparent; border-bottom: 34px solid #1f5f8b; }
-.road { left: 50%; bottom: -6px; width: 86px; height: 106px; background: linear-gradient(90deg, transparent 0 44%, rgba(247,243,235,.8) 44% 56%, transparent 56%), #10233f; transform: translateX(-50%) perspective(120px) rotateX(34deg); clip-path: polygon(34% 0, 66% 0, 100% 100%, 0 100%); opacity: .86; }
-.auto-shape { left: 52%; bottom: 34px; width: 64px; height: 24px; transform: translateX(-50%); background: #1f5f8b; border-radius: 16px 18px 8px 8px; box-shadow: 0 8px 0 rgba(16,35,63,.2); }
-.auto-shape::before { content: ""; position: absolute; left: 16px; top: -15px; width: 30px; height: 18px; background: #d8e9f4; border-radius: 14px 14px 0 0; }
+.indiana-photo div,
+.indiana-photo span { position: absolute; display: block; }
+.photo-sky {
+  inset: 0 0 auto 0;
+  height: 54%;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(179,58,50,.28) 0 34px, transparent 35px),
+    linear-gradient(180deg, rgba(255,255,255,.18), transparent);
+}
+.photo-field {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 86px;
+  background:
+    repeating-linear-gradient(11deg, rgba(247,243,235,.28) 0 13px, rgba(16,35,63,.07) 13px 26px),
+    linear-gradient(180deg, #b8c982, #789457);
+}
+.photo-main-street {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 118px;
+}
+.photo-main-street::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  width: 120px;
+  height: 150px;
+  transform: translateX(-50%) perspective(140px) rotateX(34deg);
+  clip-path: polygon(36% 0, 64% 0, 100% 100%, 0 100%);
+  background: linear-gradient(90deg, transparent 0 46%, rgba(247,243,235,.86) 46% 54%, transparent 54%), #4b5563;
+}
+.photo-shop {
+  left: 30px;
+  bottom: 54px;
+  width: 86px;
+  height: 64px;
+  background: #f7f3eb;
+  border: 4px solid #b33a32;
+  border-radius: 6px;
+  box-shadow: inset 0 18px 0 rgba(179,58,50,.12);
+}
+.photo-shop::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  right: -7px;
+  top: -18px;
+  height: 18px;
+  background: repeating-linear-gradient(90deg, #b33a32 0 15px, #ffffff 15px 30px);
+  border-radius: 8px 8px 0 0;
+}
+.photo-home {
+  right: 30px;
+  bottom: 52px;
+  width: 88px;
+  height: 60px;
+  background: #ffffff;
+  border: 4px solid #10233f;
+  border-radius: 7px;
+}
+.photo-home::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: -34px;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-bottom: 34px solid #7f2f2a;
+}
+.photo-car {
+  left: 50%;
+  bottom: 42px;
+  width: 72px;
+  height: 28px;
+  transform: translateX(-50%);
+  background: #1f5f8b;
+  border-radius: 18px 20px 9px 9px;
+  box-shadow: 0 8px 0 rgba(16,35,63,.22);
+}
+.photo-car::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: -16px;
+  width: 36px;
+  height: 19px;
+  background: #d8e9f4;
+  border-radius: 15px 15px 0 0;
+}
+.photo-tree {
+  bottom: 68px;
+  width: 38px;
+  height: 70px;
+  background: linear-gradient(90deg, transparent 42%, #7a4b2b 42% 58%, transparent 58%);
+}
+.photo-tree::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #5f7f4a;
+  box-shadow: 12px 16px 0 #6f9257, -8px 18px 0 #789c5c;
+}
+.photo-tree-left { left: 140px; }
+.photo-tree-right { right: 138px; }
 .coverage-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: -6px 0 22px; }
 .coverage-tags span { padding: 8px 12px; border-radius: 999px; background: rgba(179,58,50,.1); color: var(--navy); font-size: .88rem; font-weight: 800; }
 ul { margin: 0; padding-left: 20px; color: var(--muted); line-height: 2; }
@@ -246,6 +345,18 @@ article p, .steps p, .contact p { color: var(--muted); margin-bottom: 0; }
 }
 .contact-grid h3 { margin-bottom: 8px; }
 .contact-grid p { margin: 0; }
+.hours-card {
+  max-width: 620px;
+  margin: 26px auto 0;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(179, 58, 50, 0.18);
+  box-shadow: 0 18px 42px rgba(16,35,63,.1);
+}
+.hours-card h3 { margin-bottom: 12px; }
+.hours-card p { margin: 6px 0; }
+.hours-card strong { color: var(--navy); }
 .contact-promise {
   display: grid;
   gap: 6px;
@@ -308,7 +419,7 @@ footer p { margin: 0; }
   .site-header, .hero, .split { grid-template-columns: 1fr; }
   .site-header { align-items: flex-start; }
   .hero { min-height: auto; }
-  .indiana-scene { height: 180px; }
+  .indiana-photo { height: 190px; }
   .grid, .carrier-grid, .contact-grid, .license-grid { grid-template-columns: 1fr; }
   nav { font-size: .95rem; }
 }

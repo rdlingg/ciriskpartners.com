@@ -124,6 +124,27 @@ article p, .steps p, .contact p { color: var(--muted); margin-bottom: 0; }
 .life-insurance .button { flex-shrink: 0; background: var(--navy); box-shadow: 0 16px 36px rgba(16, 35, 63, 0.22); }
 .contact { text-align: center; max-width: 960px; margin: 0 auto; padding: clamp(34px, 6vw, 64px); }
 .contact p { max-width: 720px; margin-left: auto; margin-right: auto; }
+.contact-details { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+.contact-details a {
+  color: var(--navy);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(212, 154, 58, 0.45);
+}
+.contact-details a:hover { color: var(--blue); }
+.hours { display: grid; gap: 12px; max-width: 620px; margin: 32px auto 0; text-align: left; }
+.hours p {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0;
+  padding: 14px 18px;
+  background: rgba(16, 35, 63, 0.04);
+  border: 1px solid rgba(16, 35, 63, 0.08);
+  border-radius: 16px;
+}
+.hours strong { color: var(--navy); }
+.hours span { color: var(--muted); }
 footer { padding: 28px clamp(20px, 5vw, 72px); color: var(--muted); background: #ffffff; }
 footer p { margin: 0; }
 
@@ -133,5 +154,6 @@ footer p { margin: 0; }
   .hero { min-height: auto; }
   .grid { grid-template-columns: 1fr; }
   .life-insurance { align-items: flex-start; flex-direction: column; }
+  .hours p { flex-direction: column; gap: 4px; text-align: center; }
   nav { font-size: .95rem; }
 }
